@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: clickmart_auto_deploy
+    restart: always
+    env_file:
+      - ./backend-drf/.env
+    environment:
+      # Postgres ищет именно эти имена переменных:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
+
+#запуск так
+#docker-compose up -d
+#или так
+#docker-compose -f dockerlocaldb.yml up -d

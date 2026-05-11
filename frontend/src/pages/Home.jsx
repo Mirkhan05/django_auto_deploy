@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useCart } from "../context/CartContext";
 import { useAxios } from "../hooks/useAxios";
+import useAuth from "../hooks/useAuth"; // Убрали фигурные скобки //  ДОБАВЬ ЭТУ СТРОКУ
 import Hero from "./Hero";
 import Products from "./Products";
 
