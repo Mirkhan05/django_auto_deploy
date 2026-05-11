@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.LINODE_USER }}
           key: ${{ secrets.LINODE_SSH_KEY }}
           script: |
-            cd /opt/clickmart/django_auto_deploy
+            cd /opt/clickmart
             git pull origin main
             docker compose up --build -d
 
