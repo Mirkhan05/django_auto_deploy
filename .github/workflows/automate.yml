@@ -20,3 +20,4 @@ jobs:
             cd /opt/clickmart/django_auto_deploy
             git pull origin main
             docker compose up --build -d
+

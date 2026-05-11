@@ -39,6 +39,6 @@ services:
   # If container is deleted → data is lost
 # With this:
   # Data is stored in a Docker-managed volume
-  # Data persists even if container stops or restarts
+  # Data persists even if container stops or restartsh
 volumes:
   postgres_data:
