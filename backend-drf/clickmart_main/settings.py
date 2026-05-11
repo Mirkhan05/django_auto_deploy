@@ -172,8 +172,11 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'http://139.162.178.236:5173',
-    'http://139.162.178.236:80'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:5173',
+#     'http://139.162.178.236:5173',
+#     'http://139.162.178.236:80'
+# ]
+
+# Или временно для теста:
+CORS_ALLOW_ALL_ORIGINS = True
