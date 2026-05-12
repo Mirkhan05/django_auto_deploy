@@ -19,7 +19,7 @@ RUN npm run build
 # Stage 2: Nginx, alpine means the lighter version of Nginx
 FROM nginx:alpine
 
-# Copy build output to Nginx html directory
+# Copy build output to Nginx html directoryn
 COPY --from=build /app/dist /usr/share/nginx/html
 
 EXPOSE 80
