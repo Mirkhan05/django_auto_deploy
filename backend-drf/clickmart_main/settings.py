@@ -173,9 +173,10 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 CORS_ALLOWED_ORIGINS = [
+    'http://139.162.178.236:80'
     'http://localhost:5173',
     'http://139.162.178.236:5173',
-    'http://139.162.178.236:80'
+    
 ]
 
 # Или временно для теста:
